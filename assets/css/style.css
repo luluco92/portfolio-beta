@@ -1,0 +1,122 @@
+* {
+    font-family: arial, wingdings, sans-serif;
+    margin: 0;
+  }
+
+body {
+  background-color: cinnabar;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  line-height: 40px;
+  color: lightgray;
+  background-color: teal;
+}
+
+header h1 {
+  margin-left: 20px;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  font-size: 20px;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav ul li {
+  margin-left: 42px;
+}
+
+header a {
+  color: lightgray;
+
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 0;
+  margin: 2% auto;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  background-color: teal;
+  color: lightgray;
+  padding-left: 8px;
+}
+
+
+figure {
+  width: 200px;
+  background-color: lightgreen;
+  float: left;
+  margin-right: 10px;
+}
+
+
+aside {
+  background-color: lightgreen;
+  padding: 1%;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+aside ul {
+  list-style-type: none;
+  line-height: 40px;
+}
+
+footer {
+  width: 100%;
+  color: lightgray;
+  background-color: teal;
+  padding: 1%;
+}
+
+footer p::before {
+  content:'\2693';
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 10px;
+ }
+
+.content {
+  display: block;
+  border: 5px solid teal;
+  flex: 1 0 25%;
+  box-shadow: 4px 8px #55bbbb;
+  margin: 20px 0 10px;
+}
+
+#about p {
+  line-height: 24px;
+
+}
+
+@media screen and (max-width: 768px) {
+  header, main, .container {
+    flex-direction: column;
+  }
+
+nav ul li {
+  margin-left: 20px;
+  }
+
+}
